@@ -1,37 +1,19 @@
 rank,name,scores_overall
-=120,National Taiwan University (NTU),59.9
-351–400,National Tsing Hua University,42.4–44.4
-351–400,Taipei Medical University,42.4–44.4
-501–600,"China Medical University, Taiwan",35.3–38.7
-501–600,National Chiao Tung University,35.3–38.7
-501–600,National Taiwan University of Science and Technology (Taiwan Tech),35.3–38.7
-501–600,National Yang-Ming University,35.3–38.7
-601–800,National Cheng Kung University (NCKU),28.3–35.2
-601–800,National Taiwan Normal University,28.3–35.2
-801–1000,"Asia University, Taiwan",22.2–28.2
-801–1000,Chang Gung University,22.2–28.2
-801–1000,Fu Jen Catholic University,22.2–28.2
-801–1000,Kaohsiung Medical University,22.2–28.2
-801–1000,National Central University,22.2–28.2
-801–1000,National Chengchi University,22.2–28.2
-801–1000,National Dong Hwa University,22.2–28.2
-801–1000,National Sun Yat-Sen University,22.2–28.2
-801–1000,National Taipei University of Technology,22.2–28.2
-1001+,Chaoyang University of Technology,10.7–22.1
-1001+,Chung Yuan Christian University,10.7–22.1
-1001+,Feng Chia University,10.7–22.1
-1001+,I-Shou University,10.7–22.1
-1001+,Ming Chuan University,10.7–22.1
-1001+,National Changhua University of Education,10.7–22.1
-1001+,National Chiayi University,10.7–22.1
-1001+,National Chin-Yi University of Technology,10.7–22.1
-1001+,National Chung Cheng University,10.7–22.1
-1001+,National Chung Hsing University,10.7–22.1
-1001+,National University of Kaohsiung,10.7–22.1
-1001+,National Taipei University,10.7–22.1
-1001+,National Taiwan Ocean University,10.7–22.1
-1001+,National Yunlin University of Science and Technology,10.7–22.1
-1001+,Tamkang University,10.7–22.1
-1001+,Tunghai University,10.7–22.1
-1001+,Tzu Chi University,10.7–22.1
-1001+,Yuan Ze University,10.7–22.1
+120,國立臺灣大學,59.9
+351–400,國立清華大學,42.4–44.4
+351–400,臺北醫學大學,42.4–44.4
+501–600,中國醫藥大學,35.3–38.7
+501–600,國立陽明交通大學,35.3–38.7
+501–600,國立臺灣科技大學,35.3–38.7
+501–600,國立陽明大學,35.3–38.7
+601–800,國立成功大學,28.3–35.2
+601–800,國立臺灣師範大學,28.3–35.2
+801–1000,亞洲大學,22.2–28.2
+801–1000,長庚大學,22.2–28.2
+801–1000,輔仁大學,22.2–28.2
+801–1000,高雄醫學大學,22.2–28.2
+801–1000,國立中央大學,22.2–28.2
+801–1000,國立政治大學,22.2–28.2
+801–1000,,22.2–28.2
+801–1000,國立中山大學,22.2–28.2
+801–1000,,22.2–28.2
