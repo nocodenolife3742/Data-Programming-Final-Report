@@ -14,7 +14,7 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     html.H4(
-        '各校退學率、延修率、休學率與排名',
+        '各校退學率、延修率、休學率',
         style={'textAlign': 'center', 'color': 'black', 'fontSize': 24, 'fontWeight': 'bold'}
     ),
     dcc.Dropdown(
