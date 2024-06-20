@@ -13,10 +13,15 @@ for year in range(106, 111):
 app = Dash(__name__)
 
 app.layout = html.Div([
-    html.H4('各校退學率、延修率、休學率與排名'),
+    html.H4(
+        '各校退學率、延修率、休學率與排名',
+        style={'textAlign': 'center', 'color': '#7FDBFF', 'fontSize': 24, 'fontWeight': 'bold'}
+    ),
     dcc.Dropdown(
         id="school",
         options=list(all_school),
+        value=list(all_school)[0],
+        style={'width': '50%', 'margin': 'auto', 'margin-bottom': '20px'},
     ),
     dcc.Graph(id="graph"),
 ])
@@ -32,22 +37,12 @@ def update_line_chart(school: str):
         data = datum[year][datum[year]['學校名稱'] == school]
         for attribute in ['退學', '休學', '延修']:
             try:
-                overall_data[year][f"{attribute}率"] = (data[f"{attribute}人數-總計"].item() / data['在學學生數-總計'].item())
+                overall_data[year][f"{attribute}率"] = data[f"{attribute}人數-總計"].item() / data[
+                    '在學學生數-總計'].item()
             except:
                 overall_data[year][f"{attribute}率"] = np.nan
     fig = px.line(pd.DataFrame(overall_data).transpose(), y=['退學率', '延修率', '休學率'], x=range(106, 111))
     return fig
-
-def aaa(school: str):
-    overall_data = {year: {'退學率': np.nan, '延修率': np.nan, '休學率': np.nan} for year in range(106, 111)}
-    for year in range(106, 111):
-        data = datum[year][datum[year]['學校名稱'] == school]
-        for attribute in ['退學', '休學', '延修']:
-
-            overall_data[year][f"{attribute}率"] = (data[f"{attribute}人數-總計"].item() / data['在學學生數-總計'].item())
-    print(pd.DataFrame(overall_data))
-
-aaa('國立成功大學')
 
 
 app.run_server()
