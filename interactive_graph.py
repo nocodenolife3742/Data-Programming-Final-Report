@@ -22,6 +22,7 @@ app.layout = html.Div([
         options=list(all_school),
         value=list(all_school)[0],
         style={'width': '50%', 'margin': 'auto', 'margin-bottom': '20px'},
+        clearable=False
     ),
     dcc.Graph(id="graph"),
 ])
