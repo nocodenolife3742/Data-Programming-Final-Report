@@ -15,7 +15,7 @@ app = Dash(__name__)
 app.layout = html.Div([
     html.H4(
         '各校退學率、延修率、休學率與排名',
-        style={'textAlign': 'center', 'color': '#7FDBFF', 'fontSize': 24, 'fontWeight': 'bold'}
+        style={'textAlign': 'center', 'color': 'black', 'fontSize': 24, 'fontWeight': 'bold'}
     ),
     dcc.Dropdown(
         id="school",
@@ -41,7 +41,15 @@ def update_line_chart(school: str):
                     '在學學生數-總計'].item()
             except:
                 overall_data[year][f"{attribute}率"] = np.nan
-    fig = px.line(pd.DataFrame(overall_data).transpose(), y=['退學率', '延修率', '休學率'], x=range(106, 111))
+    fig = px.line(
+        pd.DataFrame(overall_data).transpose(),
+        y=['退學率', '延修率', '休學率'],
+        x=range(106, 111)
+    )
+    fig.update_layout(
+        xaxis_title="年分",
+        yaxis_title="比例",
+    )
     return fig
 
 
